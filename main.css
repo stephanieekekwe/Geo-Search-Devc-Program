@@ -1,3 +1,70 @@
-body{
-    font-size: 18px;
+* {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    grid-template-areas: 
+        "h h h h"
+        "a a b b"
+        "f f f f"
+    ;
+}
+section#h {
+    grid-area: h;
+}
+
+section#a {
+    grid-area: a;
+}
+
+section#b {
+    grid-area: b;
+}
+
+footer {
+    grid-area: f;
+    background-color: #50E3C2;
+}
+
+header {
+    color: #a1b94c;
+}
+
+.header-img {
+    width: 100px;
+}
+
+input {
+    border: 2px solid #a1b94c;
+    border-radius: 5px;
+    height: 50px;
+    width: 80%;
+    margin: auto 30px;
+    background: rgba(250, 250, 250, 0.8);
+    font-size: 0.5em;
+}
+
+input:focus {
+    border: none !important;
+}
+
+.btn-search {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    cursor: pointer;
 }
